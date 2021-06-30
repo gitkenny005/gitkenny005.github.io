@@ -1,0 +1,85 @@
+/* bungee-shade-regular - latin */
+@font-face {
+  font-family: 'Bungee Shade';
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/bungee-shade-v6-latin-regular.woff2") format("woff2"), url("../fonts/bungee-shade-v6-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-regular - latin */
+@font-face {
+  font-family: 'Poppins-400';
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/poppins-v15-latin-regular.woff2") format("woff2"), url("../fonts/poppins-v15-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-500 - latin */
+@font-face {
+  font-family: 'Poppins-500';
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/poppins-v15-latin-500.woff2") format("woff2"), url("../fonts/poppins-v15-latin-500.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-600 - latin */
+@font-face {
+  font-family: 'Poppins-600';
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/poppins-v15-latin-600.woff2") format("woff2"), url("../fonts/poppins-v15-latin-600.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-800 - latin */
+@font-face {
+  font-family: 'Poppins-800';
+  font-style: normal;
+  font-weight: 800;
+  src: local(""), url("../fonts/poppins-v15-latin-800.woff2") format("woff2"), url("../fonts/poppins-v15-latin-800.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-900 - latin */
+@font-face {
+  font-family: 'Poppins-900';
+  font-style: normal;
+  font-weight: 900;
+  src: local(""), url("../fonts/poppins-v15-latin-900.woff2") format("woff2"), url("../fonts/poppins-v15-latin-900.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto-400';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v27-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto-v27-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v27-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v27-latin-regular.woff") format("woff"), url("../fonts/roboto-v27-latin-regular.ttf") format("truetype"), url("../fonts/roboto-v27-latin-regular.svg#Roboto") format("svg");
+  /* Legacy iOS */
+}
+
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto-500';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v27-latin-500.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto-v27-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v27-latin-500.woff2") format("woff2"), url("../fonts/roboto-v27-latin-500.woff") format("woff"), url("../fonts/roboto-v27-latin-500.ttf") format("truetype"), url("../fonts/roboto-v27-latin-500.svg#Roboto") format("svg");
+  /* Legacy iOS */
+}
+
+/* carter-one-regular - latin */
+@font-face {
+  font-family: 'Carter One';
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/carter-one-v12-latin-regular.woff2") format("woff2"), url("../fonts/carter-one-v12-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/*# sourceMappingURL=hosting-fonts.css.map */

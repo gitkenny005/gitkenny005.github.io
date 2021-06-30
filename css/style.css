@@ -1,0 +1,563 @@
+:root {
+  scrollbar-color: white #2e3645 !important;
+  scrollbar-width: thin !important;
+}
+
+:root a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: 'Roboto-400';
+}
+
+:root li {
+  list-style-type: none;
+}
+
+:root p {
+  color: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 300vh;
+  background-color: #202330;
+  color: white;
+}
+
+.main nav {
+  padding: 20px 100px;
+}
+
+.main nav .navigation-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main nav .logo img {
+  max-width: 500px;
+}
+
+.main nav .links-menu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.main nav .link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width .3s;
+}
+
+.main nav .link:hover::after {
+  width: 100%;
+}
+
+.main .header {
+  height: 70vh;
+  display: grid;
+  place-items: center;
+}
+
+.main .header h1 {
+  font-family: 'Poppins-900';
+  letter-spacing: 2px;
+  user-select: none;
+  text-shadow: 50px 10px 10px rgba(34, 28, 28, 0.1);
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.main .header .typing {
+  position: relative;
+}
+
+.main .header .typing::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  width: 100%;
+  background: #202330;
+  animation: typings 4s steps(13) forwards, typing-animation 1s infinite;
+}
+
+.about-section .about-title {
+  display: grid;
+  place-items: center;
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+.about-section .about-title .title {
+  font-size: clamp(3rem, 5.5vw, 4rem);
+  font-family: 'Poppins-800';
+}
+
+.about-section .about-me-container {
+  padding: 2em;
+}
+
+.about-section .about-splitter {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1em;
+}
+
+.about-section .about-me-profile {
+  display: flex;
+  justify-content: center;
+}
+
+.about-section .profile-control {
+  max-width: 350px;
+}
+
+.about-section .profile-control img {
+  max-width: 100%;
+}
+
+.about-section .description-control {
+  max-width: 680px;
+}
+
+.about-section .description-control :is(p) {
+  letter-spacing: 1px;
+  font-family: 'Poppins-400';
+  line-height: 30px;
+  font-size: clamp(0.3rem, 3vw, 1rem);
+}
+
+.about-section .description-control :is(h3) {
+  font-family: 'Bungee Shade';
+  padding-bottom: .5em;
+  line-height: 70px;
+  letter-spacing: 1px;
+  font-size: clamp(2rem, 5vw, 3.7rem);
+}
+
+.about-section .about-me-btn {
+  margin-top: 10px;
+}
+
+.about-section .about-me-btn button {
+  padding: 1.3em 2em;
+  border-radius: 0;
+  letter-spacing: 1px;
+  background-color: #f1b49f;
+  border: none;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+.about-section .about-me-btn button:hover {
+  transform: translateY(10%);
+}
+
+.about-section .things-title {
+  margin-top: 200px;
+  display: grid;
+  place-items: center;
+}
+
+.about-section .things-title h4 {
+  font-size: clamp(1rem, 4.4vw, 2rem);
+  letter-spacing: 1px;
+  font-family: 'Poppins-600';
+}
+
+.about-section .col-container {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  text-align: center;
+  padding: 2em 5em;
+  margin-top: 20px;
+}
+
+.about-section .col-content h4 {
+  font-size: clamp(1rem, 2.6vw, 1.5rem);
+  font-family: "Poppins-400";
+  margin-top: 10px;
+}
+
+.about-section .col-content p {
+  padding: .4em 1em;
+  margin-top: 10px;
+  font-size: clamp(0.8rem, 2.6vw, 0.9rem);
+  font-family: 'Roboto-400';
+  line-height: 25px;
+}
+
+.project-title {
+  display: grid;
+  place-items: center;
+  margin-top: 200px;
+}
+
+.project-title h3 {
+  font-family: 'Poppins-800';
+  font-size: clamp(1rem, 8.5vw, 4rem);
+  padding-bottom: 2em;
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-project {
+  width: 500px;
+  height: 400px;
+  background: #000;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .25s ease-in;
+  backface-visibility: hidden;
+}
+
+.first-project:hover {
+  transform: scale(0.9);
+}
+
+.first-project:hover::after {
+  height: 200px;
+}
+
+.first-project:hover .f-description p {
+  margin-bottom: 120px;
+  opacity: 1;
+  font-size: 1rem;
+}
+
+.first-project:hover img {
+  opacity: 20%;
+}
+
+.first-project:hover h3 {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.first-project:hover img {
+  transform: scale(1.25);
+}
+
+.first-project::after {
+  width: 100%;
+  content: "";
+  left: 0px;
+  bottom: 0px;
+  height: 150px;
+  position: absolute;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) black 100%);
+  z-index: 20;
+  transition: all .25s ease-in;
+}
+
+.first-project img {
+  height: 100%;
+  z-index: 10;
+  transition: all .25s ease-in;
+  opacity: 80%;
+}
+
+.first-project .f-description {
+  z-index: 30;
+  position: absolute;
+  bottom: 0px;
+  color: black;
+  padding: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.first-project .f-description h3 {
+  font-family: 'Poppins-600';
+  letter-spacing: 1px;
+}
+
+.first-project .f-description p {
+  font-size: .8rem;
+  opacity: 0;
+  margin-bottom: -200px;
+  transition: all .25s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  font-family: 'Poppins-400';
+}
+
+.second-project {
+  width: 500px;
+  height: 400px;
+  background: #000;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .25s ease;
+  backface-visibility: hidden;
+}
+
+.second-project:hover {
+  transform: scale(0.9);
+}
+
+.second-project:hover::after {
+  height: 200px;
+}
+
+.second-project:hover .s-description p {
+  margin-bottom: 120px;
+  opacity: 1;
+  font-size: 1rem;
+}
+
+.second-project:hover img {
+  opacity: 20%;
+}
+
+.second-project:hover h3 {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.second-project:hover img {
+  transform: scale(1.25);
+}
+
+.second-project::after {
+  width: 100%;
+  content: "";
+  left: 0px;
+  bottom: 0px;
+  height: 150px;
+  position: absolute;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) black 100%);
+  z-index: 20;
+  transition: all .25s ease;
+}
+
+.second-project img {
+  height: 100%;
+  z-index: 10;
+  transition: all .25s ease;
+  opacity: 80%;
+}
+
+.second-project .s-description {
+  z-index: 30;
+  position: absolute;
+  bottom: 0px;
+  color: black;
+  padding: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.second-project .s-description h3 {
+  font-family: 'Poppins-600';
+  letter-spacing: 1px;
+}
+
+.second-project .s-description p {
+  font-size: .8rem;
+  opacity: 0;
+  margin-bottom: -200px;
+  transition: all .25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  font-family: 'Poppins-400';
+}
+
+.contact-title {
+  padding: 5em;
+  text-align: center;
+}
+
+.contact-title h3 {
+  font-size: clamp(1rem, 5rem, 3rem);
+  font-family: 'Poppins-600';
+}
+
+.contact-title p {
+  letter-spacing: 1px;
+  font-family: 'Poppins-400';
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+  font-family: 'Roboto-400';
+}
+
+.contact input[type='text'],
+.contact input[type='email'] {
+  border: none;
+  background: none;
+  border-bottom: 2px solid white;
+  padding: .2em;
+  margin-bottom: 2em;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+.contact form .name {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em;
+  margin: 0em 2em;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact form .info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em;
+  margin: 0em 2em;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact form .message-box {
+  margin: 0em 2em;
+}
+
+.contact form textarea {
+  resize: none;
+  width: 80%;
+  height: 20vh;
+  color: white;
+  background: none;
+  font-family: 'Poppins-400';
+  border: 2px solid white;
+  padding: 1em;
+}
+
+.contact form .submit-btn {
+  padding: 5em;
+  text-align: center;
+}
+
+.contact form .submit-btn input {
+  padding: 1.3em 3.8em;
+  background-color: #f1b49f;
+  letter-spacing: 1px;
+  font-family: 'Poppins-400';
+  cursor: pointer;
+  border-radius: 2px;
+  border: none;
+}
+
+@keyframes typings {
+  to {
+    width: 0;
+  }
+}
+
+@keyframes typing-animation {
+  50% {
+    color: transparent;
+  }
+}
+
+@keyframes links-animation {
+  from {
+    border-bottom: 3px solid white;
+    border-bottom-width: 5%;
+  }
+  to {
+    border-bottom: 3px solid white;
+    border-bottom-width: 50%;
+  }
+}
+
+@keyframes header-title {
+  0% {
+    width: 20%;
+    background-color: white;
+  }
+  100% {
+    width: 5%;
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .navigation-menu {
+    padding: 0;
+    margin: 0;
+  }
+  .navigation-menu .links-menu li a {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .description-control {
+    text-align: center;
+  }
+  .description-control h3 {
+    line-height: 10px;
+    letter-spacing: 1px;
+  }
+  .description-control p {
+    text-align: justify;
+  }
+  .description-control .about-me-btn button {
+    margin-top: 1em;
+  }
+  .first-project {
+    width: 300px;
+    height: 400px;
+  }
+  .second-project {
+    width: 300px;
+    height: 400px;
+  }
+  .first-project:hover .f-description p {
+    margin-bottom: -1px;
+    opacity: 1;
+    font-size: 1rem;
+  }
+  .second-project:hover .s-description p {
+    margin-bottom: -1px;
+    opacity: 1;
+    font-size: 1rem;
+  }
+  .message-box {
+    text-align: center;
+  }
+  .message-box textarea {
+    width: 50px;
+    height: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
